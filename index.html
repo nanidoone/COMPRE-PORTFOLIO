@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDVB - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/LOG.svg" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.viewer.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <h3>PORTFOLIO</h3>
+        </div>
+        
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" title="Toggle navigation menu" aria-label="Toggle navigation menu">
+            <span class="sr-only">Menu</span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" data-number="00.">Home</a></li>
+            <li><a href="#about" data-number="01.">About</a></li>
+            <li><a href="#projects" data-number="02.">Projects</a></li>
+            <li><a href="#skills" data-number="03.">Skills</a></li>
+            <li><a href="#contact" data-number="04.">Contact</a></li>
+            <li>
+                <a href="#" class="resume-btn" id="viewResumeBtn" title="View Resume">Resume</a>
+            </li>
+        </ul>
+
+        <div id="pdfModal" class="pdf-modal">
+            <div class="pdf-modal-content">
+                <div class="pdf-modal-header">
+                    <h3>My Resume</h3>
+                    <button class="pdf-close-btn" aria-label="Close modal">&times;</button>
+                </div>
+                <div class="pdf-modal-body">
+                    <iframe 
+                        id="pdfViewer" 
+                        src="" 
+                        frameborder="0"
+                        title="PDF document viewer - My Resume"
+                        allow="autoplay"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<section class="hero" id="home">
+    <div class="hero-intro">Hi, my name is</div>
+    <h1 class="hero-name">Lady Doone V. Bahaynon</h1>
+    <h2 class="hero-title" id="typed-text"></h2>
+</section>
+
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <div class="image-placeholder">
+                    <img src="./images/me.jpeg" alt="My Photo" class="about-photo">
+                </div>
+            </div>
+           <div class="about-content">
+    <p class="about-text">
+        I am a 4th year IT student who enjoys working on both computer hardware and networking, with a strong interest in understanding how systems are built and how networks connect and communicate.
+    </p>
+    <p class="about-text">
+        I like working hands-on with hardware components, troubleshooting issues, and configuring network setups while making sure everything runs efficiently and reliably.
+    </p>
+    <p class="about-text">
+        Through <span class="highlight">continuous learning and practical experience</span>, I aim to improve my technical skills in hardware, networking, and system support, and prepare myself for real-world IT environments.
+    </p>
+</div>
+
+        </div>
+    </section>
+    
+
+    <section class="commissions-section">
+        <div class="commissions-container">
+            <div class="commissions-header">
+                <div class="header-accent-line"></div>
+                <h2 class="section-title">
+                    <span class="title-icon">📌</span>
+                   KEY EXPERIENCE
+                </h2>
+                
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span class="icon">👩🏼</span>
+                    </div>
+                    <h3 class="service-title">STUDENT LEADER</h3>
+                    <div class="service-tags">
+                        <span class="tag">SBO</span>
+                        <span class="tag">VICE PRESIDENT INTERNAL</span>
+                    </div>
+                    <p class="service-description">Led internal operations, coordinated activities, and supported organizational initiatives to enhance student engagement and teamwork.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span class="icon">🧍🏽‍♀️</span>
+                    </div>
+                    <h3 class="service-title">Student Assistant</h3>
+                    <div class="service-tags">
+                        <span class="tag">IT Department Student Assistant</span>
+                        <span class="tag">2 years</span>
+                    </div>
+                    <p class="service-description">Assisted with IT operations and gained hands-on experience in computer hardware and networking.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span class="icon">👩🏿‍💻</span>
+                    </div>
+                    <h3 class="service-title">Capstone</h3>
+                    <div class="service-tags">
+                        <span class="tag">Project Leader</span>
+                        <span class="tag">Documenter</span>
+                    </div>
+                    <p class="service-description">Managed team tasks and documented project progress, research, and outcomes for the capstone project.</p>
+                </div>
+            </div>
+            
+            <div class="commissions-footer">
+                <div class="ideal-for">
+                    <div class="ideal-icon">🎯</div>
+                    <div class="ideal-content">
+                        
+                
+                <div class="cta-container">
+                    <a href="#contact" class="cta-button">
+                        Get in Touch Through:
+                    </a>
+                    <p class="cta-note">click the button for more info</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="projects" id="projects">
+        <h2 class="section-title">CAPSTONE</h2>
+        
+        <div class="projects-container">
+
+            <div class="project-category">
+               
+                
+                <div class="project-item">
+                    <div class="project-year">2025-2026</div>
+                    <div class="project-details">
+                        <h4 class="project-name">DESIGN AND DEVELOPMENT OF PROGRESSIVE WEB APPLICATION FOR NBSC ALUMNI PROFILING AND TRACER
+</h4>
+                        <p class="project-description">
+                            Developed a progressive web application to streamline NBSC alumni profiling and tracking, enabling efficient data management, easy access to alumni information, and improved communication between the school and its graduates.
+                        </p>
+                        <div class="project-buttons">
+                            <a href="https://alumnitracers.vercel.app/" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               title="Visit NBSC Alumni Tracer">
+                                <button class="project-btn" type="button">NBSC ALUMNI SITE</button>
+                            </a>
+                            <a href="https://docs.google.com/document/d/1mqpm5pFuwk-WxAR1dc_8pxTqUYp0P6ZZLNVbLpSMljk/edit?usp=sharing"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               title="View user manual for NBSC Alumni Tracer">
+                                <button class="project-btn" type="button">VIEW USER MANUAL</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+
+       
+
+        <div class="project-showcase">
+            <div class="showcase-image">
+                <a href="https://www.facebook.com/share/p/1BbxdVJnfJ/" target="_blank" rel="noopener">
+                    <img src="images/blue.jpg" alt="IT Students Appreciation ">
+                </a>
+            </div>
+            <p class="showcase-caption">
+                Appreciation post for my fellow 4th year IT students to celebrate how we made difficult things good and got them done.
+            </p>
+        </div>
+    </section>
+
+
+<section class="skills" id="skills">
+    <h2 class="skills-title">SKILLS</h2>
+    
+    <div class="skills-container">
+        <div class="skills-text">
+            <p>
+                My journey started with exploring computer hardware, assembling and troubleshooting PCs and peripherals, and learning networking setup and configuration. I gained hands-on experience providing technical support, maintaining systems, and assisting in IT operations, while documenting processes and managing projects efficiently. Along the way, I developed strong teamwork, leadership, and public speaking abilities, and became proficient with Windows OS, MS Office, VS Code, and Git/GitHub.
+            </p>
+        </div>
+
+        <div class="tech-stack">
+            <h3 class="tech-stack-title">MY CURRENT TECH STACK</h3>
+            
+            <div class="tech-grid">
+
+                
+
+                
+
+
+                
+
+                <div class="tech-item" data-tech="javascript">
+                    <div class="tech-icon">
+                        <img src="images/Javascript.png" alt="JavaScript Logo">
+                    </div>
+                </div>
+
+
+               
+
+
+                <div class="tech-item" data-tech="github">
+                    <div class="tech-icon">
+                        <img src="images/github.png" alt="GitHub Logo">
+                    </div>
+                </div>
+
+
+               
+
+                <div class="tech-item" data-tech="mysql">
+                    <div class="tech-icon">
+                        <img src="images/mysql.png" alt="MySQL Logo">
+                    </div>
+                </div>
+
+                <div class="tech-item" data-tech="git">
+                    <div class="tech-icon">
+                        <img src="images/git.png" alt="Git Logo">
+                    </div>
+                </div>
+
+                
+
+
+               
+
+                
+                </div>
+            </div>
+        </div>
+        
+        <div class="certificates-quote">
+            <p>My hands are ready, my will is wide. To learn, to stretch, to grow.</p>
+            <p>For the greatest skill I hold inside is the hunger to always know.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="certificates" id="certificates">
+    <h2 class="certificates-title">MY CERTIFICATES</h2>
+
+    <div class="certificates-grid">
+        <div class="certificate-item full-width" data-certificate="on">
+            UNDERSTANDING PROMPT ENGINEERING
+        </div>
+        
+        <div class="certificate-item half-width" data-certificate="in">
+            CYBERSECURITY BASICS
+        </div>
+        <div class="certificate-item half-width" data-certificate="un">
+            PROJECT MANAGEMENT FUNDAMENTALS
+        </div>
+        
+        <div class="certificate-item full-width" data-certificate="an">
+            UNDERSTANDING DATA VISUALIZATION
+        </div>
+
+        <div class="certificate-item full-width" data-certificate="enz">
+            INTRODUCTION TO DATA
+        </div>
+        
+
+       
+    </div>
+
+    <div class="modal-overlay" id="certificateModal">
+        <button class="modal-close" id="closeModal">&times;</button>
+        <img class="modal-image" id="modalImage" src="" alt="Certificate Preview">
+    </div>
+</section>
+
+
+    <section class="contact" id="contact">
+        <h2 class="contact-title">CONTACT</h2>
+        
+        <div class="contact-container">
+
+            <a href="vicariatodoneta@gmail.com" class="contact-item">
+                <div class="contact-icon">
+                    <img src="./images/gmail.png" alt="Gmail" class="contact-img">
+                </div>
+                <div class="contact-info">
+                    <h3>Gmail</h3>
+                    <span>vicariatodoneta@gmail.com</span>
+                </div>
+            </a>
+
+
+            <a href="https://www.facebook.com/LadyDoone16/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon">
+                    <img src="./images/fb.png" alt="Telegram" class="contact-img">
+                </div>
+                <div class="contact-info">
+                    <h3>Facebook</h3>
+                    <span>Lady Doone Vicariato</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+<script src="script.js"></script>
+<script src="certificates.js"></script>
+<script src="typing-animation.js"></script>
+</body>
+</html>
